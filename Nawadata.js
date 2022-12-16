@@ -2,10 +2,11 @@
 
 console.log("no.1 sort ===================================================================================") 
 const startingConsonants=(string)=>{
-    let findString = string.toLowerCase().match(/[^aeiou]/gi);
+    let findString = string.toLowerCase().match(/[^aeiou ]/gi);
 
     findString.splice(1, 0, "s");
     findString.pop();
+    console.log(findString.join(""))
     return findString.join("");
 }
 
